@@ -1,0 +1,9 @@
+{
+  "name": "make-a-mate",
+  "version": "1.0.0",
+  "scripts": {},
+  "license": "ISC",
+  "dependencies": {
+    "alpinejs": "^3.14.1"
+  }
+}
