@@ -1,5 +1,3 @@
-import dom from './dom.js';
+import * as dom from './dom.js';
 
-(async () => {
-
-})();
+dom.initialize();

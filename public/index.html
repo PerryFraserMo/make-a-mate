@@ -11,30 +11,87 @@
 </head>
 
 <body>
-  <template>
-    
+  <template id="mateOptionControlContainer">
+    <mateOptionControlContainer>
+      <leftArrow></leftArrow>
+      <rightArrow></rightArrow>
+    </mateOptionControlContainer>
+  </template>
+  <template id="phoneConversationContainer">
+    <phoneConversationMessage>
+    </phoneConversationMessage>
   </template>
 
-  <screen>
-    <mate>
-      
-    </mate>
+  <screen id="screen">
+    <screenTitle>Make-a-Mate</screenTitle>
 
     <display id="entry">
-
+      <button class="floorButton" id="entryDone">Let's Go!</button>
     </display>
     
     <display id="dressing">
-
+      <displayTitle>Dress-a-Mate</displayTitle>
+      <button class="floorButton" id="dressingDone">All done!</button>
+    </display>
+    
+    <display id="attributes">
+      <displayTitle>Choose-a-Personality</displayTitle>
+      <button class="floorButton" id="attributesDone">Finished!</button>
     </display>
 
-    <display id="dialoge">
-      
+    <display id="scenario">
+      <displayTitle>Make-a-Scenario</displayTitle>
+      <scenarioTextContainer>
+        <textarea id="scenarioText"></textarea>
+      </scenarioTextContainer>
+      <button class="floorButton" id="scenarioDone"></button>
+    </display>
+
+    <display id="dialog">
+      <displayTitle>Test-a-Scenario</displayTitle>
+      <button class="floorButton" id="dialogDone">See Results!</button>
     </display>
 
     <display id="result">
-      
+      <displayTitle>Results</displayTitle>
+      <resultContainer></resultContainer>
+
+      <button class="floorButton" id="resultDone">All Done!</button>
     </display>
+
+    <mateContainer id="mateContainer">
+      <mateOptionContainer id="mateHat">
+        <mateOption option="none"></mateOption>
+      </mateOptionContainer>
+      <mateOptionContainer id="mateHair">
+        <mateOption option="mulletLong"></mateOption>
+        <mateOption option="mulletMedium"></mateOption>
+        <mateOption option="mulletShort"></mateOption>
+        <mateOption option="none"></mateOption>
+      </mateOptionContainer>
+      <mateOptionContainer id="mateHead">
+        <mateOption option="young"></mateOption>
+        <mateOption option="mostacheTwo"></mateOption>
+        <mateOption option="mostacheOne"></mateOption>
+      </mateOptionContainer>
+      <mateOptionContainer id="mateShirt">
+        <mateOption option="shirtOne"></mateOption>
+        <mateOption option="shirtTwo"></mateOption>
+      </mateOptionContainer>
+      <mateOptionContainer id="mateLegs">
+        <mateOption option="legsOne"></mateOption>
+        <mateOption option="legsTwo"></mateOption>
+      </mateOptionContainer>
+
+      <mate></mate>
+    </mateContainer>
+
+    <phoneContainer id="phoneContainer">
+      <phoneBase></phoneBase>
+      <phoneContent>
+        <phoneConversationContainer></phoneConversationContainer>
+      </phoneContent>
+    </phoneContainer>
   </screen>
 
   <script type="module" src="./script/entry.js"></script>
